@@ -12,6 +12,8 @@ To gain access to Erebor's gems, add this to your project's `Gemfile`:
     
 ## Adding Gems to Erebor
 
+**IMPORTANT**: this is a public repo, don't commit secrets.
+
 Assuming you've succesfully built a gem, 
 
     cp YOUR-x.y.z.gem gems
