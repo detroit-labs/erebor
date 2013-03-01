@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 git update-index -q --ignore-submodules --refresh
 if ! git diff-files --quiet --ignore-submodules -- ; then
@@ -14,16 +14,17 @@ if [[ $dirty -eq 1 ]] ; then
   exit 1
 fi
 
-
 original_branch=$(git rev-parse --abbrev-ref HEAD)
 trap "git reset -q --hard; git checkout -q $original_branch" EXIT
 
-bundle install > /dev/null 2>&1
 printf "generating gem index\n"
-bundle exec gem generate_index > /dev/null 2>&1
 git checkout -q gems
+git ls-files --with-tree master gems |xargs git checkout master
+gem generate_index > /dev/null 2>&1
 if ! git diff-files --quiet --ignore-submodules -- ; then
-  git commit -am 'generated index'
+  git add .
+  git commit -m 'generated index'
 fi
+
 printf "pushing to $(git config remote.origin.url)\n"
 git push origin gems
