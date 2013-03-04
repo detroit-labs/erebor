@@ -18,7 +18,7 @@ One day the dwarves of Erebor may branch out to other crafts:
 
 Erebor is a RubyGems source, add it your project's `Gemfile`:
 
-    source https://raw.github.com/detroit-labs/erebor/gems/
+    source 'https://raw.github.com/detroit-labs/erebor/gems/'
 
 ## Contributing Gems to Erebor
 
