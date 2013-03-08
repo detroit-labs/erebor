@@ -1,16 +1,976 @@
 --- !ruby/object:Gem::SourceIndex
 gems:
+  magnum_ci-0.0.1: !ruby/object:Gem::Specification 
+    name: magnum_ci
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 0
+      - 1
+      version: 0.0.1
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-01 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - magnum
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: ""
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Magnum CI
+    test_files: []
+    
+  magnum_ci-0.1.0: !ruby/object:Gem::Specification 
+    name: magnum_ci
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 1
+      - 0
+      version: 0.1.0
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-05 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: plist
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - magnum
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: ""
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Magnum CI
+    test_files: []
+    
+  magnum_ci-0.2.0: !ruby/object:Gem::Specification 
+    name: magnum_ci
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 2
+      - 0
+      version: 0.2.0
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-08 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: plist
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - magnum
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: ""
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Magnum CI
+    test_files: []
+    
+  magnum_ci-0.2.1: !ruby/object:Gem::Specification 
+    name: magnum_ci
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 2
+      - 1
+      version: 0.2.1
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-08 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: plist
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+    - !ruby/object:Gem::Dependency 
+      name: dotenv
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - magnum
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: ""
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Magnum CI
+    test_files: []
+    
+  magnum_ci-0.2.2: !ruby/object:Gem::Specification 
+    name: magnum_ci
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 2
+      - 2
+      version: 0.2.2
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-08 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: plist
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+    - !ruby/object:Gem::Dependency 
+      name: dotenv
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+    - !ruby/object:Gem::Dependency 
+      name: cocoapods
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 16
+            - 0
+            version: 0.16.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 16
+            - 0
+            version: 0.16.0
+    - !ruby/object:Gem::Dependency 
+      name: shenzhen
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 0
+            version: 0.3.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 0
+            version: 0.3.0
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - magnum
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: ""
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Magnum CI
+    test_files: []
+    
   rugged-0.17.0.b8: !ruby/object:Gem::Specification 
     name: rugged
     version: !ruby/object:Gem::Version 
-      hash: 
       prerelease: true
       segments: 
       - 0
       - 17
       - 0
-      - b
-      - 8
+      - b8
       version: 0.17.0.b8
     platform: ruby
     authors: 
@@ -24,33 +984,31 @@ gems:
     default_executable: 
     dependencies: 
     - !ruby/object:Gem::Dependency 
-      type: :development
       name: rake-compiler
-      version_requirements: &id001 !ruby/object:Gem::Requirement 
+      prerelease: false
+      requirement: &id001 !ruby/object:Gem::Requirement 
         requirements: 
         - - ">="
           - !ruby/object:Gem::Version 
-            hash: 
             segments: 
             - 0
             version: "0"
-      requirement: *id001
-      prerelease: false
-    - !ruby/object:Gem::Dependency 
       type: :development
+      version_requirements: *id001
+    - !ruby/object:Gem::Dependency 
       name: minitest
-      version_requirements: &id002 !ruby/object:Gem::Requirement 
+      prerelease: false
+      requirement: &id002 !ruby/object:Gem::Requirement 
         requirements: 
         - - ~>
           - !ruby/object:Gem::Version 
-            hash: 
             segments: 
             - 3
             - 0
             - 0
             version: 3.0.0
-      requirement: *id002
-      prerelease: false
+      type: :development
+      version_requirements: *id002
     description: |
       Rugged is a Ruby bindings to the libgit2 linkable C Git library. This is
       for testing and using the libgit2 library in a language that is awesome.
@@ -77,7 +1035,6 @@ gems:
       requirements: 
       - - ">="
         - !ruby/object:Gem::Version 
-          hash: 
           segments: 
           - 0
           version: "0"
@@ -85,7 +1042,6 @@ gems:
       requirements: 
       - - ">"
         - !ruby/object:Gem::Version 
-          hash: 
           segments: 
           - 1
           - 3
