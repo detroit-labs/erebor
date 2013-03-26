@@ -1,5 +1,327 @@
 --- !ruby/object:Gem::SourceIndex
 gems:
+  cinder-0.5.0: !ruby/object:Gem::Specification 
+    name: cinder
+    version: !ruby/object:Gem::Version 
+      prerelease: false
+      segments: 
+      - 0
+      - 5
+      - 0
+      version: 0.5.0
+    platform: ruby
+    authors: 
+    - Tim Taylor
+    autorequire: 
+    bindir: bin
+    cert_chain: []
+    
+    date: 2013-03-26 00:00:00 Z
+    default_executable: 
+    dependencies: 
+    - !ruby/object:Gem::Dependency 
+      name: commander
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 4
+            - 1
+            - 3
+            version: 4.1.3
+    - !ruby/object:Gem::Dependency 
+      name: extlib
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 9
+            - 16
+            version: 0.9.16
+    - !ruby/object:Gem::Dependency 
+      name: plist
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 3
+            - 1
+            - 0
+            version: 3.1.0
+    - !ruby/object:Gem::Dependency 
+      name: dotenv
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 5
+            - 0
+            version: 0.5.0
+    - !ruby/object:Gem::Dependency 
+      name: cocoapods
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 16
+            - 0
+            version: 0.16.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 16
+            - 0
+            version: 0.16.0
+    - !ruby/object:Gem::Dependency 
+      name: shenzhen
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 0
+            version: 0.3.0
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 0
+            version: 0.3.0
+    - !ruby/object:Gem::Dependency 
+      name: rugged
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 17
+            - 0
+            - b8
+            version: 0.17.0.b8
+      type: :runtime
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 17
+            - 0
+            - b8
+            version: 0.17.0.b8
+    - !ruby/object:Gem::Dependency 
+      name: bundler
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 1
+            - 3
+            version: "1.3"
+    - !ruby/object:Gem::Dependency 
+      name: rake
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    - !ruby/object:Gem::Dependency 
+      name: rspec
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ">="
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            version: "0"
+    - !ruby/object:Gem::Dependency 
+      name: fakefs
+      prerelease: false
+      requirement: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 2
+            version: 0.3.2
+      type: :development
+      version_requirements: !ruby/object:Gem::Requirement 
+        none: false
+        requirements: 
+        - - ~>
+          - !ruby/object:Gem::Version 
+            segments: 
+            - 0
+            - 3
+            - 2
+            version: 0.3.2
+    description: Continuous Delivery for iOS Apps
+    email: 
+    - tim@detroitlabs.com
+    executables: 
+    - cinder
+    extensions: []
+    
+    extra_rdoc_files: []
+    
+    files: []
+    
+    has_rdoc: 
+    homepage: https://github.com/detroit-labs/cinder
+    licenses: 
+    - MIT
+    post_install_message: 
+    rdoc_options: []
+    
+    require_paths: 
+    - lib
+    required_ruby_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          hash: 120098139726422366
+          segments: 
+          - 0
+          version: "0"
+    required_rubygems_version: !ruby/object:Gem::Requirement 
+      none: false
+      requirements: 
+      - - ">="
+        - !ruby/object:Gem::Version 
+          hash: 120098139726422366
+          segments: 
+          - 0
+          version: "0"
+    requirements: []
+    
+    rubyforge_project: 
+    rubygems_version: 1.3.6
+    signing_key: 
+    specification_version: 3
+    summary: Cinder
+    test_files: []
+    
   magnum_ci-0.0.1: !ruby/object:Gem::Specification 
     name: magnum_ci
     version: !ruby/object:Gem::Version 
