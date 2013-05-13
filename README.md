@@ -27,8 +27,11 @@ Build your gem the way that gems are built, then…
 
     cp YOUR-x.y.z.gem gems
     git add gems/YOUR-x.y.z.gem
-    git ci -m 'added YOURGEM x.y.z' gems
+    git checkout -m 'added YOURGEM x.y.z' gems
     git push origin master
+
+    make sure you pull down the gems branch.
+    git fetch origin && git branch gems origin/gems
     script/publish
 
 **Reminder**: public repo, no s3kr3ts
