@@ -30,7 +30,8 @@ Build your gem the way that gems are built, then…
     git checkout -m 'added YOURGEM x.y.z' gems
     git push origin master
 
-    make sure you pull down the gems branch.
+make sure you pull down the gems branch.
+
     git fetch origin && git branch gems origin/gems
     script/publish
 
